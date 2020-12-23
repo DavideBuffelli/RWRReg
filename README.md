@@ -2,7 +2,7 @@
 
 This repository contains the reference code for the paper "Are Graph Convolutional Networks Fully Exploiting Graph Structure?".
 
-In particular, it shows how it's very easy to implement the RWRReg regularization on existing GNN models for node classification.
+We show how it's very easy to implement the RWRReg regularization on existing GNN models for node classification.
 The starting GraphSage model was taken from <https://github.com/williamleif/graphsage-simple/>.
 
 If you use the code in this repository please cite the following paper.
