@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+# Set name of execution 
+#$ -N gsage
+#
+# Parallel
+#$ -pe parallel 4
+#
+# GPU
+# -q gpu
+#
+# All paths are relative to current directory (-cwd)
+# (output and error files will be in current directory too, unless redirected)
+#$ -cwd
+#
+# If you don ^`^yt redirect output, each execution will generate 2 different files:
+# output file = test.job.oJOBID
+# error file = test.job.eJOBID
+
+#GPU
+#source /nfsd/opt/anaconda3_cuda10/anaconda.sh
+#conda activate
+# add --device cuda
+
+#CPU
+source /nfsd/opt/anaconda_tf_cpu//anaconda.sh
+conda activate /nfsd/VFdisk/buffelli/python_envs/torch
+
+python model.py --dataset cora --num_experiments 100 --feat_addition 2 --laplacian_reg 1 --lwlr_without_feat_addition > cora.txt
+python model.py --dataset citeseer --num_experiments 100 --feat_addition 2 --laplacian_reg 1 --lwlr_without_feat_addition > citeseer.txt
+python model.py --dataset pubmed --num_experiments 100 --feat_addition 2 --laplacian_reg 1 --lwlr_without_feat_addition > pubmed.txt
