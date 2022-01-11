@@ -1,16 +1,16 @@
 # RWRReg
 
-This repository contains the reference code for the paper "Are Graph Convolutional Networks Fully Exploiting Graph Structure?".
+This repository contains the reference code for the paper "The Impact of Global Structural Information in Graph Neural Networks Applications ".
 
 We show how it's very easy to implement the RWRReg regularization on existing GNN models for node classification.
 The starting GraphSage model was taken from <https://github.com/williamleif/graphsage-simple/>.
 
 If you use the code in this repository please cite the following paper.
 ```
-@misc{buffelli2020graph,
-      title={Are Graph Convolutional Networks Fully Exploiting Graph Structure?},
+@misc{buffelli2022graph,
+      title={The Impact of Global Structural Information in Graph Neural Networks Applications },
       author={Buffelli, Davide and Vandin, Fabio},
-      year={2020},
+      year={2022},
       eprint={2006.03814},
       archivePrefix={arXiv},
       primaryClass={cs.LG}
