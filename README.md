@@ -7,13 +7,17 @@ The starting GraphSage model was taken from <https://github.com/williamleif/grap
 
 If you use the code in this repository please cite the following paper.
 ```
-@misc{buffelli2022graph,
-      title={The Impact of Global Structural Information in Graph Neural Networks Applications },
-      author={Buffelli, Davide and Vandin, Fabio},
-      year={2022},
-      eprint={2006.03814},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@Article{data7010010,
+AUTHOR = {Buffelli, Davide and Vandin, Fabio},
+TITLE = {The Impact of Global Structural Information in Graph Neural Networks Applications},
+JOURNAL = {Data},
+VOLUME = {7},
+YEAR = {2022},
+NUMBER = {1},
+ARTICLE-NUMBER = {10},
+URL = {https://www.mdpi.com/2306-5729/7/1/10},
+ISSN = {2306-5729},
+DOI = {10.3390/data7010010}
 }
 ```
 
